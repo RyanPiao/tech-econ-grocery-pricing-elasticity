@@ -2,6 +2,10 @@
 
 This repository documents a reproducible applied-econometrics workflow for studying demand response to delivered-price changes in app-based grocery delivery.
 
+## Start here (primary single-page overview)
+- **Executive summary:** [`docs/weekX_executive_summary.md`](docs/weekX_executive_summary.md)
+- Website abstract source: [`docs/weekX_website_abstract.md`](docs/weekX_website_abstract.md)
+
 ## Research question
 How does customer demand respond to changes in **effective delivered price** (delivery/service/surge fees and discounts) in the short run and medium run?
 
@@ -10,6 +14,9 @@ How does customer demand respond to changes in **effective delivered price** (de
 - Day 2-7 baseline artifacts (identification lock, synthetic panel, EDA, baseline model, robustness, recap)
 
 ## Week 2 continuation (Day 2-Day 7, production-style extension)
+
+### Executive summary
+- `docs/weekX_executive_summary.md`
 
 ### Week2 Day2 — Production extraction with immutable fee-version timestamps
 - Script: `scripts/week2_day2_production_extraction.py`
