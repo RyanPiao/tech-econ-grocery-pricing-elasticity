@@ -3,14 +3,14 @@
 ## Project
 **Topic:** Algorithmic pricing and demand elasticity in app-based grocery delivery  
 **Owner:** Richeng (Tech Economist)  
-**Week:** Day 1 framing → Day 5 first empirical readout
+**Stage:** Step 1 framing → Step 5 first empirical readout
 
 ---
 
-## 1) Week Objective
-This week, I want to produce a **credible first estimate of short-run demand elasticity** with respect to customer-facing delivered price in app-based grocery delivery.
+## 1) Stage Objective
+This stage, I want to produce a **credible first estimate of short-run demand elasticity** with respect to customer-facing delivered price in app-based grocery delivery.
 
-By end of week, I should have:
+By end of stage, I should have:
 - A clean analysis-ready panel at the session/order level.
 - A baseline elasticity estimate with transparent assumptions.
 - At least one quasi-experimental specification (event-study/DiD or threshold design).
@@ -51,7 +51,7 @@ Elasticity differs by geography, user tenure, and basket mission (top-up vs stoc
 ## Unit of analysis (priority order)
 1. **Session-level panel** (preferred): app open / browsing session with exposure to a delivered price quote.
 2. **Order-level panel**: completed checkouts with full pricing decomposition.
-3. **User-day panel**: frequency and spending outcomes for retention effects.
+3. **User-step panel**: frequency and spending outcomes for retention effects.
 
 ## Required fields
 - **Identifiers:** user_id (hashed), market/zone_id, store_id, timestamp (local + UTC).
@@ -69,7 +69,7 @@ Elasticity differs by geography, user tenure, and basket mission (top-up vs stoc
 ---
 
 ## 5) Identification Strategy Options
-I will treat this as an identification menu and select 1 primary + 1 fallback this week.
+I will treat this as an identification menu and select 1 primary + 1 fallback this stage.
 
 ### Option A: Event-study / DiD around pricing policy changes (preferred if available)
 Use market-time variation in fee algorithm updates or pricing rule deployments.
@@ -117,26 +117,26 @@ Estimate within-user sensitivity to delivered price changes with rich FE control
 
 ---
 
-## 7) Day 1–Day 5 Execution Plan
+## 7) Step 1–Step 5 Execution Plan
 
-### Day 1 (today): framing + design lock
+### Step 1 (today): framing + design lock
 - Finalize estimand definitions and outcome metrics.
 - Decide primary identification path based on available logs.
 - Draft data dictionary and extraction spec.
 
-### Day 2: data extraction + QA
+### Step 2: data extraction + QA
 - Build first analysis dataset.
 - Complete missingness, consistency, and event-timing checks.
 
-### Day 3: baseline estimation
+### Step 3: baseline estimation
 - Run FE baseline + simple elasticity model.
 - Produce first segment-level heterogeneity tables.
 
-### Day 4: causal specification
+### Step 4: causal specification
 - Run primary quasi-experimental model (DiD/RDD/IV).
 - Conduct diagnostics (pre-trends, bandwidth sensitivity, placebo checks).
 
-### Day 5: synthesis
+### Step 5: synthesis
 - Summarize findings, assumptions, and caveats.
 - Write recommendation memo and next-step experiment plan.
 

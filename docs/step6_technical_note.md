@@ -1,4 +1,4 @@
-# Day 6 Technical Note
+# Step 6 Technical Note
 
 ## Objective
 This repository provides a reproducible, academically styled weekly workflow for estimating demand sensitivity to algorithmic delivered-price variation in grocery delivery.
@@ -14,8 +14,8 @@ This repository provides a reproducible, academically styled weekly workflow for
 
 - `docs/`: assumptions, locks, interpretation, limits, recap
 - `scripts/`: synthetic data generator and analysis pipeline
-- `notebooks/`: Day 2–5 analysis notebooks
-- `outputs/`: generated tables/charts for Day 3–5
+- `notebooks/`: Step 2–5 analysis notebooks
+- `outputs/`: generated tables/charts for Step 3–5
 - `data/`: reproducible synthetic panel output
 
 ## Reproducibility instructions
@@ -29,13 +29,13 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2) Generate synthetic dataset (Day 2)
+### 2) Generate synthetic dataset (Step 2)
 
 ```bash
 python scripts/day2_generate_synthetic_data.py --n-sessions 60000 --seed 20260303
 ```
 
-### 3) Build Day 3–5 outputs
+### 3) Build Step 3–5 outputs
 
 ```bash
 python scripts/day3_day5_pipeline.py
@@ -51,9 +51,9 @@ Open and run notebooks in order:
 
 ## Expected outputs
 
-- Day 3: summary tables + conversion/price chart
-- Day 4: baseline econometric result table
-- Day 5: robustness check table
+- Step 3: summary tables + conversion/price chart
+- Step 4: baseline econometric result table
+- Step 5: robustness check table
 
 ## Guardrails
 

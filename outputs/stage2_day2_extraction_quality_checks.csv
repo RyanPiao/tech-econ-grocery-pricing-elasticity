@@ -1,6 +1,0 @@
-check,value,target,unit
-rows_extracted,60000.0,1.0,rows
-missing_fee_version_id_rate,0.0,0.0,share
-non_immutable_version_timestamp_rate,0.0,0.0,share
-catalog_monotonic_markets_violation_count,0.0,0.0,count
-mean_abs_delivery_fee_reconstruction_error,0.7783731895109952,,usd

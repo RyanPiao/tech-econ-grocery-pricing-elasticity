@@ -1,0 +1,5 @@
+model,target,coef,std_err,p_value,n_obs
+first_stage_price,did_treat_post,0.025191535003261035,0.004082202831359773,6.783194877587365e-10,53955
+reduced_form_conversion,did_treat_post,0.0012286864841528503,0.0025754385414394794,0.6333061885140185,53955
+implied_elasticity_rf_over_fs,conversion wrt ln_effective_price,0.04877378389184293,,,53955
+fe_descriptive,ln_effective_price,-0.04990484394912254,0.00325867571985612,6.122252838311228e-53,53955

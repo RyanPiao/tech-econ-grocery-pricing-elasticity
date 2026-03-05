@@ -1,2 +1,0 @@
-test,f_stat,p_value,df_num,df_denom,terms
-joint_pretrend_leads_eq_zero,79.15575170957526,0.0004630465777497225,4.0,4.0,"ev_m5, ev_m4, ev_m3, ev_m2"

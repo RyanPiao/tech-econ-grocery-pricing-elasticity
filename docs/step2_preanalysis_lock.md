@@ -1,8 +1,8 @@
-# Day 2 Pre-Analysis Lock
+# Step 2 Pre-Analysis Lock
 
 **Topic (locked):** Algorithmic pricing and demand elasticity in app-based grocery delivery
 
-This memo closes the five Day 1 review conditions before any Day 2 extraction or estimation work.
+This memo closes the five Step 1 review conditions before any Step 2 extraction or estimation work.
 
 ---
 
@@ -14,7 +14,7 @@ We treat the introduction of a revised fee algorithm as the treatment, with mark
 
 - **Treated units:** markets receiving the new fee schedule
 - **Controls:** not-yet-treated markets in the same calendar windows
-- **Time granularity:** session-level observations with day/week controls
+- **Time granularity:** session-level observations with step/stage controls
 - **Interpretation:** average causal effect of the rollout-induced price shift on conversion behavior, conditional on assumptions
 
 ### Fallback design (pre-committed)
@@ -91,7 +91,7 @@ A session is excluded from primary causal estimation if any of:
 3. **Platform outage/incident windows:** marked operational anomaly window
 4. **Ambiguous pricing snapshot:** missing or inconsistent component sums
 
-Contamination windows are encoded and reported as exclusion rates by market/week.
+Contamination windows are encoded and reported as exclusion rates by market/stage.
 
 ---
 
@@ -103,7 +103,7 @@ Primary causal interpretation is allowed only if all gates pass:
 2. **Consistency gate:** >=99% component add-up integrity (`components -> EffectivePrice/TotalPaid`)
 3. **Pre-trend gate:** event-study lead coefficients jointly not different from zero (p >= 0.10)
 4. **First-stage relevance gate:** rollout -> `ln_effective_price` F-stat >= 10
-5. **Inference gate:** clustered SE at market-week (or market when sparse)
+5. **Inference gate:** clustered SE at market-stage (or market when sparse)
 6. **Sensitivity gate:** sign and order of magnitude robust across predefined alternate specs
 
 If any gate fails, all elasticity statements are explicitly labeled **descriptive/non-causal**.
@@ -113,4 +113,4 @@ If any gate fails, all elasticity statements are explicitly labeled **descriptiv
 ## Lock timestamp
 
 - Locked on: 2026-03-03 (America/New_York)
-- Applies to Day 2–Day 7 workflow unless superseded by a documented amendment.
+- Applies to Step 2–Step 7 workflow unless superseded by a documented amendment.

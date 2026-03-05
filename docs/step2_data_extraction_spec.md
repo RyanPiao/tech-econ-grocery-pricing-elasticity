@@ -1,4 +1,4 @@
-# Day 2 Data Extraction Specification (Final)
+# Step 2 Data Extraction Specification (Final)
 
 ## Scope
 Build an analysis-ready session-level panel for estimating demand response to algorithmic delivered-price changes.
@@ -41,7 +41,7 @@ Build an analysis-ready session-level panel for estimating demand response to al
 - `quote_ts_utc` (timestamp)
 - `quote_ts_local` (timestamp)
 - `date` (date)
-- `week` (ISO week index)
+- `stage` (ISO stage index)
 
 ### Price components
 - `item_subtotal` (float)

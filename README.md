@@ -85,11 +85,11 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-# Week 1 baseline panel + outputs
+# Stage 1 baseline panel + outputs
 python scripts/step2_generate_synthetic_data.py --n-sessions 60000 --seed 20260303
 python scripts/step3_day5_pipeline.py
 
-# Week 2 continuation end-to-end
+# Stage 2 continuation end-to-end
 python scripts/week2_run_all.py
 ```
 

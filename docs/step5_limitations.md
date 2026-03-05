@@ -1,4 +1,4 @@
-# Day 5 Limitations and Scope Boundaries
+# Step 5 Limitations and Scope Boundaries
 
 ## Data limitations
 
@@ -13,7 +13,7 @@
 
 1. **Rollout exogeneity remains an assumption**
    - Staggered rollout may still correlate with market-specific operations or strategy decisions.
-2. **No full event-study pre-trend table in Day 4 baseline**
+2. **No full event-study pre-trend table in Step 4 baseline**
    - Parallel trend evidence is incomplete until explicit lead estimates are shown.
 3. **Cluster count is limited in synthetic setup**
    - Inference with small number of clusters can be fragile.
@@ -35,5 +35,5 @@
 
 1. Production-grade quote exposure logs with immutable fee versioning.
 2. Full event-study diagnostics (lead tests, dynamic effects).
-3. Market-week clustered (or multiway) inference with larger treated/control count.
-4. User-day retention outcomes for medium-run elasticity and welfare tradeoffs.
+3. Market-stage clustered (or multiway) inference with larger treated/control count.
+4. User-step retention outcomes for medium-run elasticity and welfare tradeoffs.

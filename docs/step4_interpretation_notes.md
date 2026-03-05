@@ -1,4 +1,4 @@
-# Day 4 Interpretation Notes
+# Step 4 Interpretation Notes
 
 ## Baseline model set
 
