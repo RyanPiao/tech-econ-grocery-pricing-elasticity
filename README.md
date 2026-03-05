@@ -9,16 +9,16 @@ This repository documents a reproducible applied-econometrics workflow for study
 ## Research question
 How does customer demand respond to changes in **effective delivered price** (delivery/service/surge fees and discounts) in the short run and medium run?
 
-## Week 1 (completed baseline)
+## Stage 1 (completed baseline)
 - Step 1 framing + review: `STEP1_problem_framing.md`, `STEP1_review.md`
 - Step 2-7 baseline artifacts (identification lock, synthetic panel, EDA, baseline model, robustness, recap)
 
-## Week 2 continuation (Step 2-Step 7, production-style extension)
+## Stage 2 continuation (Step 2-Step 7, production-style extension)
 
 ### Executive summary
 - `docs/weekX_executive_summary.md`
 
-### Week2 Step 2 — Production extraction with immutable fee-version timestamps
+### Stage2 Step 2 — Production extraction with immutable fee-version timestamps
 - Script: `scripts/week2_step2_production_extraction.py`
 - Notebook: `notebooks/week2_step2_production_extraction.ipynb`
 - Doc: `docs/week2_step2_production_extraction_spec.md`
@@ -29,7 +29,7 @@ How does customer demand respond to changes in **effective delivered price** (de
   - `outputs/week2_step2_fee_version_market_share.csv`
   - `outputs/week2_step2_fee_versions_over_time.png`
 
-### Week2 Step 3 — Event-study lead/lag + pre-trend tests
+### Stage2 Step 3 — Event-study lead/lag + pre-trend tests
 - Script: `scripts/week2_step3_event_study.py`
 - Notebook: `notebooks/week2_step3_event_study.ipynb`
 - Doc: `docs/week2_step3_event_study_note.md`
@@ -39,7 +39,7 @@ How does customer demand respond to changes in **effective delivered price** (de
   - `outputs/week2_step3_event_study_sample_counts.csv`
   - `outputs/week2_step3_event_study_plot.png`
 
-### Week2 Step 4-Step 5 — Heterogeneity expansions
+### Stage2 Step 4-Step 5 — Heterogeneity expansions
 - Script: `scripts/week2_step4_day5_heterogeneity.py`
 - Notebook: `notebooks/week2_step4_day5_heterogeneity.ipynb`
 - Doc: `docs/week2_step4_day5_heterogeneity_note.md`
@@ -48,7 +48,7 @@ How does customer demand respond to changes in **effective delivered price** (de
   - `outputs/week2_step4_day5_segment_counts.csv`
   - `outputs/week2_step4_day5_heterogeneity_plot.png`
 
-### Week2 Step 6 — Retention/frequency medium-run outcomes
+### Stage2 Step 6 — Retention/frequency medium-run outcomes
 - Script: `scripts/week2_step6_retention_frequency.py`
 - Notebook: `notebooks/week2_step6_retention_frequency.ipynb`
 - Doc: `docs/week2_step6_retention_frequency_note.md`
@@ -57,7 +57,7 @@ How does customer demand respond to changes in **effective delivered price** (de
   - `outputs/week2_step6_user_week_panel_sample.csv`
   - `outputs/week2_step6_medium_run_response_curve.png`
 
-### Week2 Step 7 — Weekly continuation recap
+### Stage2 Step 7 — Weekly continuation recap
 - Script: `scripts/week2_step7_generate_recap.py`
 - Output doc: `docs/week2_step7_weekly_recap.md`
 
