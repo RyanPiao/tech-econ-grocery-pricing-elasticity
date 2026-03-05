@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,13 +17,13 @@ def run(cmd: list[str]) -> None:
 
 def main() -> None:
     # Ensure base panel exists and is reproducible for this run.
-    run(["python", "scripts/day2_generate_synthetic_data.py", "--n-sessions", "60000", "--seed", "20260303"])
+    run([sys.executable, "scripts/step2_generate_synthetic_data.py", "--n-sessions", "60000", "--seed", "20260303"])
 
-    run(["python", "scripts/week2_day2_production_extraction.py"])
-    run(["python", "scripts/week2_day3_event_study.py"])
-    run(["python", "scripts/week2_day4_day5_heterogeneity.py"])
-    run(["python", "scripts/week2_day6_retention_frequency.py"])
-    run(["python", "scripts/week2_day7_generate_recap.py"])
+    run([sys.executable, "scripts/stage2_step2_production_extraction.py"])
+    run([sys.executable, "scripts/stage2_step3_event_study.py"])
+    run([sys.executable, "scripts/stage2_step4_step5_heterogeneity.py"])
+    run([sys.executable, "scripts/stage2_step6_retention_frequency.py"])
+    run([sys.executable, "scripts/stage2_step7_generate_recap.py"])
 
     print("Stage 2 continuation complete.")
 

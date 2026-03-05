@@ -154,7 +154,7 @@ def generate_panel(n_sessions: int, seed: int) -> pd.DataFrame:
             "quote_ts_utc": quote_ts_utc,
             "quote_ts_local": quote_ts_local,
             "date": pd.to_datetime(quote_ts_local).normalize(),
-            "stage": pd.to_datetime(quote_ts_local).isocalendar().stage.astype(int),
+            "stage": pd.to_datetime(quote_ts_local).isocalendar().week.astype(int),
             "hour_local": hour_local,
             "is_weekend": is_weekend,
             "treated_market": treated_market,
